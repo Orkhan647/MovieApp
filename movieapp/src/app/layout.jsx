@@ -6,11 +6,11 @@ import Tabs from "@/components/Tabs";
 
 const Layout = ({ children }) => {
   return (
-    <html lang="en">
-      <body>
+    <html suppressHydrationWarning={true} lang="en">
+      <body >
         <Providers>
           <Header />
-          <Tabs/>
+          <Tabs />
           {children}
         </Providers>
       </body>
